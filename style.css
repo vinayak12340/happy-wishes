@@ -338,6 +338,35 @@ body {
     align-items: center;
 }
 
+/* Tablet & Medium Screens (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .card-inner {
+        padding: 40px 30px;
+    }
+    .grid-content {
+        gap: 30px;
+    }
+    .sub-title {
+        font-size: 2.6rem;
+    }
+    .main-title {
+        font-size: 2.8rem;
+    }
+    .ornate-frame-container {
+        max-width: 300px;
+    }
+}
+
+/* Height-based adjustments for short screens (both web & mobile) */
+@media (max-height: 750px) {
+    body {
+        overflow-y: auto;
+        height: auto;
+        min-height: 100vh;
+        padding: 40px 10px;
+    }
+}
+
 @media (max-width: 768px) {
     body {
         overflow-x: hidden;

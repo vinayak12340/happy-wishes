@@ -339,43 +339,170 @@ body {
 }
 
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: auto;
+        min-height: 100vh;
+        padding: 40px 10px 80px 10px;
+    }
+    
+    .container {
+        padding: 10px;
+        align-items: flex-start;
+    }
+
     .grid-content {
         grid-template-columns: 1fr;
-        gap: 35px;
+        gap: 25px;
     }
+
     .card-inner {
-        padding: 30px 20px;
+        padding: 35px 20px;
     }
+
+    .ornate-frame-container {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .sub-title {
+        font-size: 2.2rem;
+        margin-bottom: -5px;
+    }
+
+    .main-title {
+        font-size: 2.4rem;
+        letter-spacing: 2px;
+    }
+
+    .message-container {
+        min-height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .message {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .counter-container {
+        padding: 12px;
+        margin-bottom: 25px;
+    }
+
+    .counter-label {
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px 20px;
+    }
+
     .envelope {
         width: 320px;
         height: 220px;
     }
+
     .top-flap {
         border-width: 110px 160px 0 160px;
     }
+
     .left-flap {
         border-width: 110px 0 110px 160px;
     }
+
     .right-flap {
         border-width: 110px 160px 110px 0;
     }
+
     .bottom-base {
         height: 110px;
     }
+
     .inner-card {
         width: 290px;
         height: 190px;
         top: 15px;
         left: 15px;
     }
+
     .envelope.open .inner-card {
         transform: translateY(-90px) scale(1.02);
     }
+
     .wax-seal {
         width: 50px;
         height: 50px;
         top: calc(50% - 15px);
         left: calc(50% - 25px);
+    }
+
+    .audio-control {
+        bottom: 15px;
+        right: 15px;
+        width: 42px;
+        height: 42px;
+    }
+
+    .music-visualizer {
+        bottom: 22px;
+        right: 65px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .envelope {
+        width: 280px;
+        height: 190px;
+    }
+
+    .top-flap {
+        border-width: 95px 140px 0 140px;
+    }
+
+    .left-flap {
+        border-width: 95px 0 95px 140px;
+    }
+
+    .right-flap {
+        border-width: 95px 140px 95px 0;
+    }
+
+    .bottom-base {
+        height: 95px;
+    }
+
+    .inner-card {
+        width: 250px;
+        height: 160px;
+        top: 15px;
+        left: 15px;
+    }
+
+    .envelope.open .inner-card {
+        transform: translateY(-80px) scale(1.02);
+    }
+
+    .wax-seal {
+        width: 44px;
+        height: 44px;
+        top: calc(50% - 12px);
+        left: calc(50% - 22px);
+    }
+
+    .card-hint {
+        font-size: 1.8rem;
     }
 }
 
